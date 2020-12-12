@@ -5,9 +5,122 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(#3eb9de, #3a80de);
+  background-attachment: fixed;
+  padding: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.App {
+  text-align: center;
+}
+.clock {
+  color: white;
+}
+
+.main_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.center_div {
+  width: 30%;
+  margin-top: 40px;
+  height: auto;
+  background-color: #f4f4f4;
+  box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  min-width: 65px;
+  box-sizing: border-box;
+  font-weight: 300;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  text-align: center;
+  height: 30px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 65%;
+  border-bottom: 2px solid #25ccf7;
+  outline: none;
+  margin-right: 20px;
+}
+
+.newBtn {
+  width: 50px;
+  height: 55px;
+  background-color: #25ccf7 !important;
+  color: white !important;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 50% !important;
+}
+
+.newBtn:hover {
+  color: #25ccf7 !important;
+  background: white !important;
+}
+
+ul {
+  margin-top: 30px;
+}
+ul li {
+  padding-left: 0px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+
+  text-transform: capitalize;
+  list-style: none;
+}
+
+.main-container {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+/* 
+.main_div::-webkit-scrollbar {
+  display: none;
+} */
+
+.complete-container {
+}
+.cross {
+  text-decoration: line-through;
+}
+.success-dialog {
+  color: white;
+  background-color: orange;
+  border-radius: 5px;
+
+  width: 20%;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
