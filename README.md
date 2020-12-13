@@ -10,7 +10,6 @@
 - proper notification to user on add/remove/complete of todo items.
 
 ## Directory Structure:
-
 ```
 .
 ├── README.md
