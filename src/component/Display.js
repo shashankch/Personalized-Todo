@@ -8,13 +8,13 @@ function Display(props) {
   return (
     <li>
       <div className='main-container'>
-     
         <div className={task.done ? 'text-container cross' : 'text-container'}>
-          {task.text} {task.done}
+          {task.text}
         </div>
         <div className='action-container'>
           <Checkbox
             color='primary'
+            checked={task.done}
             inputProps={{ 'aria-label': 'secondary checkbox' }}
             onChange={() => completeTask(id)}
           />

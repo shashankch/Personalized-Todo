@@ -3,40 +3,36 @@ import AddIcon from '@material-ui/icons/Add';
 import Display from './Display';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
+
 function Todo(props) {
+  //destructuring required props
   const {
     task,
-    taskList,
     onTaskChange,
     addTask,
     removeTask,
     completeTask,
     status,
     filter,
+    filterList,
+    handleChange,
   } = props;
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
-  const onFilterChange = () => {
-    if (filter === 'Done') {
-     
-    } else if (filter === 'Not Done') {
-    }
-  };
+
   return (
     <div className='main_div'>
       {status ? <div className='success-dialog'>{status}</div> : null}
       <div className='center_div'>
         <h1>Add Todo</h1>
+
         <Select
-          labelId='demo-simple-select-label'
-          id='demo-simple-select'
+          labelId='demo-simple-select-filled-label'
+          id='demo-simple-select-filled'
           value={filter}
-          onChange={onFilterChange}
+          onChange={handleChange}
         >
           <MenuItem value='Done'>Done</MenuItem>
-          <MenuItem value='Not Done'>Not Done</MenuItem>
-          <MenuItem value='All'>All</MenuItem>
+          <MenuItem value='Not-Done'>Not-Done</MenuItem>
+          <MenuItem value='Filter'>Filter</MenuItem>
         </Select>
         <br />
 
@@ -52,7 +48,7 @@ function Todo(props) {
         </Button>
         <br />
         <ul>
-          {taskList.map((task) => {
+          {filterList.map((task) => {
             return (
               <Display
                 key={task.id}

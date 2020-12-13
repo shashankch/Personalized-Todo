@@ -100,13 +100,7 @@ ul li {
   align-items: center;
   text-align: center;
 }
-/* 
-.main_div::-webkit-scrollbar {
-  display: none;
-} */
 
-.complete-container {
-}
 .cross {
   text-decoration: line-through;
 }
