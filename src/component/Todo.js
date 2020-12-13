@@ -32,7 +32,7 @@ function Todo(props) {
         >
           <MenuItem value='Done'>Done</MenuItem>
           <MenuItem value='Not-Done'>Not-Done</MenuItem>
-          <MenuItem value='Filter'>Filter</MenuItem>
+          <MenuItem value='filter'>Filter</MenuItem>
         </Select>
         <br />
 
